@@ -60,11 +60,10 @@ jobs:
               mkdir final
               zip -r final/GSI.zip ./*
        
-       - name: Upload GSI to WeTransfer
-         run: |
-              cd $GITHUB_WORKSPACE/ErfanGSIs/output
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
 
-         
-          
+       - name: Upload to Release‌‌...
+        uses: ncipollo/release-action@v1.8.0
+        with:
+          artifacts: "$GITHUB_WORKSPACE/ErfanGSIs/output/*"
+          tag: "MIUI10"
+          token: ${{ secrets.GITHUB_TOKEN }}

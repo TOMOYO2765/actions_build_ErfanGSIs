@@ -36,7 +36,7 @@ jobs:
             sudo apt install python3.7
             sudo apt install python3-pip
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/TOMOYO2765/ErfanGSIs.git ErfanGSIs
          
        - name: Fix exit
          run: |

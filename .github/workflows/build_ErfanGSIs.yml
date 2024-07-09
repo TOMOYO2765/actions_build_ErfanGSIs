@@ -62,8 +62,8 @@ jobs:
        
 
        - name: Upload to Release‌‌...
-        uses: ncipollo/release-action@v1.8.0
-        with:
+         uses: ncipollo/release-action@v1.8.0
+         with:
           artifacts: "$GITHUB_WORKSPACE/ErfanGSIs/output/*"
           tag: "MIUI10"
           token: ${{ secrets.GITHUB_TOKEN }}
